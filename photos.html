@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<style>
+  .header{
+    text-transform:uppercase;
+    color:brown
+  }
+  img{
+    transition:ease-in 0.2s;
+  }
+  img:hover{
+    transform: scale(1.1,1.1);
+  }
+  .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  }
+  .column{
+    grid-column: span 3;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+  }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="heading text-center my-3 border-bottom border-dark">
+            <h1 class=" header">Our Gallery</h1>
+        </div>
+         <div class="row">
+          <div class="column">
+            <img src="./images/room1.jpeg" alt="image" />
+            <img src="./images/suite2.jpg" alt="image" />
+            <img src="./images/evening.jpg" />
+            <img src="./images/suite3.jpg" >
+            <img src="./images/suite6.jpg" >
+            <img src="./images/img2.jpg" >
+
+          </div>
+          <div class="column">
+            <img src="./images/images (2).jpeg" alt="image" />
+            <img src="./images/images (3).jpeg" alt="image" />
+            <img src="./images/images (4).jpeg" />
+            <img src="./images/slideimg2.jpeg" >
+            <img src="./images/img1.jpeg" >
+
+
+          </div>
+          <div class="column">
+            <img src="./images/img2.jpg" alt="image" />
+            <img src="./images/reception.jpg" alt="image" />
+            <img src="./images/img3.jpg" />
+            <img src="./images/suite3.jpg" >
+            <img src="./images/img4.jpg" >
+            <img src="./images/img5.jpg" >
+
+          </div>
+          <div class="column">
+            <img src="./images/room1.jpeg" alt="image" />
+            <img src="./images/suite2.jpg" alt="image" />
+            <img src="./images/img6.avif" />
+            <img src="./images/suite3.jpg" >
+            <img src="./images/suite6.jpg" >
+            <img src="./images/hotel-rooms-in-los-cabos-townhouse-bedroom-scaled.jpg" >
+
+          </div>
+         </div>
+    </div>
+</body>
+</html>
+
